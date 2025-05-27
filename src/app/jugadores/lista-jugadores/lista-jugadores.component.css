@@ -1,0 +1,28 @@
+/* src/app/jugadores/lista-jugadores/lista-jugadores.component.css */
+.jugador-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.jugador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.jugador-card img {
+    transition: transform 0.3s ease;
+}
+
+.jugador-card:hover img {
+    transform: scale(1.05);
+}
+
+.badge {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.bg-football-green {
+    background-color: #2d6a4f !important;
+    color: white !important;
+}

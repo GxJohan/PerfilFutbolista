@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+html, body { 
+    height: 100%; 
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+app-root { 
+    flex: 1 0 auto; 
+}
+
+/* Estilos para el tema de fútbol */
+.bg-football-green {
+    background-color: #2d6a4f;
+}
+
+.text-football-green {
+    color: #2d6a4f;
+}
+
+.btn-football {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+}
+
+.btn-football:hover {
+    background-color: #1b5e3f;
+    color: white;
+}
+
+/* Utilidades adicionales */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer { 
+    flex-shrink: 0; 
+}

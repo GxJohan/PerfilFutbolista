@@ -1,0 +1,86 @@
+<!-- src/app/inicio/inicio.component.html -->
+<div class="container py-5">
+  <div class="row align-items-center min-vh-50">
+    <div class="col-lg-6">
+      <h1 class="display-4 fw-bold text-football-green mb-4">
+        <i class="bi bi-trophy-fill text-warning me-3"></i>
+        Perfiles de Futbolistas
+      </h1>
+      <p class="lead mb-4">
+        Explora los perfiles detallados de los mejores jugadores del mundo. 
+        Descubre sus estadísticas, logros y trayectorias en el fútbol profesional.
+      </p>
+      <div class="d-flex gap-3 mb-4">
+        <a routerLink="/jugadores" class="btn btn-football btn-lg">
+          <i class="bi bi-search me-2"></i>Ver Jugadores
+        </a>
+        <button class="btn btn-outline-secondary btn-lg" (click)="scrollToFeatures()">
+          <i class="bi bi-info-circle me-2"></i>Más Información
+        </button>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="text-center">
+        <i class="bi bi-dribbble display-1 text-football-green"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="features" class="row mt-5 pt-5">
+    <div class="col-12 text-center mb-5">
+      <h2 class="display-6 fw-bold">Características de la Aplicación</h2>
+      <p class="lead text-muted">Todo lo que necesitas saber sobre tus jugadores favoritos</p>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center p-4">
+          <i class="bi bi-person-badge fs-1 text-football-green mb-3 d-block"></i>
+          <h5 class="card-title">Perfiles Completos</h5>
+          <p class="card-text text-muted">
+            Información detallada de cada jugador incluyendo biografía, 
+            nacionalidad y datos personales.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center p-4">
+          <i class="bi bi-graph-up fs-1 text-football-green mb-3 d-block"></i>
+          <h5 class="card-title">Estadísticas</h5>
+          <p class="card-text text-muted">
+            Estadísticas actualizadas: goles, asistencias, partidos jugados 
+            y rendimiento general.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center p-4">
+          <i class="bi bi-award fs-1 text-football-green mb-3 d-block"></i>
+          <h5 class="card-title">Logros</h5>
+          <p class="card-text text-muted">
+            Lista completa de títulos, premios individuales y 
+            reconocimientos de cada jugador.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <div class="bg-light rounded-3 p-5 text-center">
+        <h3 class="mb-3">¿Listo para explorar?</h3>
+        <p class="lead mb-4">Descubre los perfiles de las estrellas del fútbol mundial</p>
+        <a routerLink="/jugadores" class="btn btn-football btn-lg">
+          <i class="bi bi-arrow-right-circle me-2"></i>Ver Lista de Jugadores
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
